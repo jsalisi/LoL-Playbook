@@ -59,6 +59,7 @@ function local_load(){
         var arText = JSON.stringify(init_stats);
         localStorage.setItem("items", arText);
         
+        document.getElementById("login_window").style.display = "block";
     } else {    
         new_stats = arr;
 
