@@ -1,0 +1,222 @@
+.nexus{
+    position: absolute !important;
+    width:3%;
+    height:3%;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#blue_nex{
+    bottom: 14%;
+    left: 18%;
+}
+
+#red_nex{
+    top: 15%;
+    right: 19.5%;
+}
+
+.inhib{
+    position: absolute !important;
+    width:3%;
+    height:3%;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#top_inhib_b{
+    bottom: 26%;
+    left: 16%;
+}
+
+#mid_inhib_b{
+    bottom: 24%;
+    left: 27%;
+}
+
+#bot_inhib_b{
+    bottom: 11%;
+    left: 28%;
+}
+
+
+#top_inhib_r{
+    top: 13%;
+    right: 30%;
+}
+
+#mid_inhib_r{
+    top: 24%;
+    right: 27.5%;
+}
+
+#bot_inhib_r{
+    top: 26%;
+    right: 17.5%;
+}
+
+.turret{
+    position: absolute !important;
+    width:3%;
+    height:3%;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#top_t1_turret_b{
+    top: 30%;
+    left: 16%;
+}
+
+#top_t2_turret_b{
+    top: 52%;
+    left: 18%;
+}
+
+#top_t3_turret_b{
+    top: 66%;
+    left: 16%;
+}
+
+#mid_t1_turret_b{
+    top:55%;
+    left:41%;
+}
+
+#mid_t2_turret_b{
+    top:64%;
+    left:36%;
+}
+
+#mid_t3_turret_b{
+    top:70%;
+    left:30%;
+}
+
+#bot_t1_turret_b{
+    bottom: 9%;
+    left:66%;
+}
+
+#bot_t2_turret_b{
+    bottom: 12%;
+    left:47%;
+}
+
+#bot_t3_turret_b{
+    bottom: 11%;
+    left:33%;
+}
+
+#top_t1_turret_r{
+    top: 11%;
+    left:33%;
+}
+
+#top_t2_turret_r{
+    top: 14%;
+    right:46%;
+}
+
+#top_t3_turret_r{
+    top: 12.5%;
+    right:34%;
+}
+
+#mid_t1_turret_r{
+    bottom:55%;
+    right:41%;
+}
+
+#mid_t2_turret_r{
+    bottom:64%;
+    right:36%;
+}
+
+#mid_t3_turret_r{
+    bottom:70%;
+    right:30%;
+}
+
+#bot_t1_turret_r{
+    bottom: 30%;
+    right: 14%;
+}
+
+#bot_t2_turret_r{
+    bottom: 53%;
+    right: 18%;
+}
+
+#bot_t3_turret_r{
+    bottom: 66%;
+    right: 17%;
+}
+
+#top_t4_turret_b{
+    bottom: 18%;
+    left: 19%;
+}
+
+#bot_t4_turret_b{
+    bottom: 15%;
+    left: 22%;
+}
+
+#top_t4_turret_r{
+    top: 16%;
+    right: 23%;
+}
+
+#bot_t4_turret_r{
+    top: 19%;
+    right: 21%;
+}
+
+.jgIcon{
+    position: absolute !important;
+    width:3%;
+    height:3%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+}
+
+#b_blue{
+    top: 45%;
+    left: 30%;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/8/85/Blue_SentinelSquare.png/revision/latest/scale-to-width-down/48?cb=20140620025405);
+}
+
+#r_blue{
+    top: 51%;
+    right: 30%;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/8/85/Blue_SentinelSquare.png/revision/latest/scale-to-width-down/48?cb=20140620025405);
+}
+
+#baron{
+    top: 31%;
+    left: 36%;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/3/38/Baron_NashorSquare.png/revision/latest/scale-to-width-down/48?cb=20140620025404);
+}
+
+#dragon{
+    bottom: 30%;
+    right: 35%;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/3/34/Elder_DragonSquare.png/revision/latest/scale-to-width-down/48?cb=20170408123953);
+}
+
+#b_red{
+    bottom: 28%;
+    right: 46%;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e7/Red_BramblebackSquare.png/revision/latest/scale-to-width-down/48?cb=20140620025406);
+}
+
+#r_red{
+    top: 28%;
+    left: 47%;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/e/e7/Red_BramblebackSquare.png/revision/latest/scale-to-width-down/48?cb=20140620025406);
+}

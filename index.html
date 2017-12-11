@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>LoL Playbook</title>
+        <link rel="icon" href="http://lol.gaming-teams.com/imgs/lol_icon.jpg" />
+        
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="map_layout.css" rel="stylesheet" type="text/css" />
+        <link href="ch_position.css" rel="stylesheet" type="text/css" />
+        <link href="tooltip_style.css" rel="stylesheet" type="text/css" />
+        <link href="homepageStyle.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap-4.0.0-beta-dist/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body onload="local_load()">    
+        <div id="workspace">        
+            <div id="adv_controls" class="col-sm-0 col-md-2">
+                
+                <div id="ch_select">
+                    <div id="img_box" data-title="Drag me to a role!"></div>
+                    <input type="text" id="ch_input" list="ch_list" placeholder="Champion Name" />
+                    <button id="go" >Go</button>
+                </div>
+                
+                <datalist id="ch_list">
+                    <option value="Aatrox"></option>
+                    <option value="Ahri"></option>
+                    <option value="Akali"></option>
+                    <option value="Alistar"></option>
+                    <option value="Amumu"></option>
+                    <option value="Anivia"></option>
+                    <option value="Annie"></option>
+                    <option value="Ashe"></option>
+                    <option value="Aurelion Sol"></option>
+                    <option value="Azir"></option>
+                    <option value="Bard"></option>
+                    <option value="Blitzcrank"></option>
+                    <option value="Brand"></option>
+                    <option value="Braum"></option>
+                    <option value="Caitlyn"></option>
+                    <option value="Camille"></option>
+                    <option value="Cassiopeia"></option>
+                    <option value="Cho'Gath"></option>
+                    <option value="Corki"></option>
+                    <option value="Darius"></option>
+                    <option value="Diana"></option>
+                    <option value="Dr._Mundo"></option>
+                    <option value="Draven"></option>
+                    <option value="Ekko"></option>
+                    <option value="Elise"></option>
+                    <option value="Evelynn"></option>
+                    <option value="Ezreal"></option>
+                    <option value="Fiddlesticks"></option>
+                    <option value="Fiora"></option>
+                    <option value="Fizz"></option>
+                    <option value="Galio"></option>
+                    <option value="Gangplank"></option>
+                    <option value="Garen"></option>
+                    <option value="Gnar"></option>
+                    <option value="Gragas"></option>
+                    <option value="Graves"></option>
+                    <option value="Hecarim"></option>
+                    <option value="Heimerdinger"></option>
+                    <option value="Illaoi"></option>
+                    <option value="Irelia"></option>
+                    <option value="Ivern"></option>
+                    <option value="Janna"></option>
+                    <option value="Jarvan_IV"></option>
+                    <option value="Jax"></option>
+                    <option value="Jayce"></option>
+                    <option value="Jhin"></option>
+                    <option value="Jinx"></option>
+                    <option value="Kalista"></option>
+                    <option value="Karma"></option>
+                    <option value="Karthus"></option>
+                    <option value="Kassadin"></option>
+                    <option value="Katarina"></option>
+                    <option value="Kayle"></option>
+                    <option value="Kayne"></option>
+                    <option value="Kennen"></option>
+                    <option value="Kha'Zix"></option>
+                    <option value="Kindred"></option>
+                    <option value="Kled"></option>
+                    <option value="Kog'Maw"></option>
+                    <option value="Leblanc"></option>
+                    <option value="Lee_Sin"></option>
+                    <option value="Leona"></option>
+                    <option value="Lissandra"></option>
+                    <option value="Lucian"></option>
+                    <option value="Lulu"></option>
+                    <option value="Lux"></option>
+                    <option value="Malphite"></option>
+                    <option value="Malzahar"></option>
+                    <option value="Maokai"></option>
+                    <option value="Master Yi"></option>
+                    <option value="Miss Fortune"></option>
+                    <option value="Mordekaiser"></option>
+                    <option value="Morgana"></option>
+                    <option value="Nami"></option>
+                    <option value="Nasus"></option>
+                    <option value="Nautilus"></option>
+                    <option value="Nidalee"></option>
+                    <option value="Nocturne"></option>
+                    <option value="Nunu"></option>
+                    <option value="Olaf"></option>
+                    <option value="Orianna"></option>
+                    <option value="Ornn"></option>
+                    <option value="Pantheon"></option>
+                    <option value="Poppy"></option>
+                    <option value="Quinn"></option>
+                    <option value="Rakan"></option>
+                    <option value="Rammus"></option>
+                    <option value="Rek'Sai"></option>
+                    <option value="Renekton"></option>
+                    <option value="Rengar"></option>
+                    <option value="Riven"></option>
+                    <option value="Rumble"></option>
+                    <option value="Ryze"></option>
+                    <option value="Sejuani"></option>
+                    <option value="Shaco"></option>
+                    <option value="Shen"></option>
+                    <option value="Shyvana"></option>
+                    <option value="Singed"></option>
+                    <option value="Sion"></option>
+                    <option value="Sivir"></option>
+                    <option value="Skarner"></option>
+                    <option value="Sona"></option>
+                    <option value="Soraka"></option>
+                    <option value="Swain"></option>
+                    <option value="Syndra"></option>
+                    <option value="Tahm Kench"></option>
+                    <option value="Taliyah"></option>
+                    <option value="Talon"></option>
+                    <option value="Taric"></option>
+                    <option value="Teemo"></option>
+                    <option value="Thresh"></option>
+                    <option value="Tristana"></option>
+                    <option value="Trundle"></option>
+                    <option value="Tryndamere"></option>
+                    <option value="Twisted Fate"></option>
+                    <option value="Twitch"></option>
+                    <option value="Udyr"></option>
+                    <option value="Urgot"></option>
+                    <option value="Varus"></option>
+                    <option value="Vayne"></option>
+                    <option value="Veigar"></option>
+                    <option value="Vel'Koz"></option>
+                    <option value="Viktor"></option>
+                    <option value="Vi"></option>
+                    <option value="Vladimir"></option>
+                    <option value="Volibear"></option>
+                    <option value="Warwick"></option>
+                    <option value="Wukong"></option>
+                    <option value="Xayah"></option>
+                    <option value="Xerath"></option>
+                    <option value="Xin Zhao"></option>
+                    <option value="Yasuo"></option>
+                    <option value="Yorick"></option>
+                    <option value="Zac"></option>
+                    <option value="Zed"></option>
+                    <option value="Ziggs"></option>
+                    <option value="Zilean"></option>
+                    <option value="Zoe"></option>
+                    <option value="Zyra"></option>
+                </datalist>
+                
+                <div id="blueroles">
+                    <h4>Roles</h4>
+                    
+                    <div id="top" class="rolebox_b" data-title="Top" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="jungle" class="rolebox_b" data-title="Jungle" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="mid" class="rolebox_b" data-title="Mid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="bot" class="rolebox_b" data-title="Bot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="support" class="rolebox_b" data-title="Support" ondrop="drop(event)" ondragover="allowDrop(event)"></div>                
+                </div>
+                
+                <div id="redroles">
+                    <h4>Roles</h4>
+                    
+                    <div id="top" class="rolebox_r" data-title="Top" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="jungle" class="rolebox_r" data-title="Jungle" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="mid" class="rolebox_r" data-title="Mid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="bot" class="rolebox_r" data-title="Bot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="support" class="rolebox_r" data-title="Support" ondrop="drop(event)" ondragover="allowDrop(event)"></div>                
+                </div>
+                
+                <div id="ward_div">
+                    <h4>Wards</h4>
+                    
+                    <button id="s_ward" data-title="Ward"></button>
+                    
+                    <button id="c_ward" data-title="Control Ward"></button>
+                </div>
+                
+                <button id="draw">Draw [Off]</button>
+                <button id="clear">Clear</button>
+                
+                <div id="tipsdiv">
+                    <input type="checkbox" checked="checked" id="toggle_tips" value="toggleTips"/>
+                    <label for="toggleTips">Toggle Tips</label>
+                </div>
+                
+                <div id="stats_table" class="container">
+                    <h4 id="stat_title">Wards on map</h4>
+                    <table class="table table-condensed">
+                        <tbody>
+                            <tr>
+                                <td>Stealth Wards:</td>
+                                <td id="s_ward_num">0</td>
+                            </tr>
+                            <tr>
+                                <td>Control Wards:</td>
+                                <td id="c_ward_num">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="bsc_controls" class="col-sm-0 col-md-2">
+                <h2 id="pbtitle">Playbook</h2>
+                <h3 id="pbtitle" >Blue Team</h3>
+                <button id="play1" class="bsc_menu">4-0-1</button>
+                <button id="play2" class="bsc_menu">1-0-4</button>
+                <button id="play3" class="bsc_menu">3-1-1</button>
+                <button id="play4" class="bsc_menu">1-3-1</button>
+                <button id="play5" class="bsc_menu">1-1-3</button>
+                <h3 id="pbtitle">Red Team</h3>
+                <button id="play1_r" class="bsc_menu">4-0-1</button>
+                <button id="play2_r" class="bsc_menu">1-0-4</button>
+                <button id="play3_r" class="bsc_menu">3-1-1</button>
+                <button id="play4_r" class="bsc_menu">1-3-1</button>
+                <button id="play5_r" class="bsc_menu">1-1-3</button>
+                <button id="default_strat" class="bsc_menu">Default</button>
+            </div>
+            
+            <div id="map" class="col-sm-12 col-md-8">
+                <div id="onmap">
+                    <div id="blue_ch_top" class="ch_icon_b" data-title="Role: Top"></div>
+                    <div id="blue_ch_jg" class="ch_icon_b" data-title="Role: Jungle"></div>
+                    <div id="blue_ch_mid" class="ch_icon_b" data-title="Role: Mid"></div>
+                    <div id="blue_ch_bot" class="ch_icon_b" data-title="Role: Bot"></div>
+                    <div id="blue_ch_sup" class="ch_icon_b" data-title="Role: Support"></div>
+                    
+                    <div id="red_ch_top" class="ch_icon_r" data-title="Role: Top"></div>
+                    <div id="red_ch_jg" class="ch_icon_r" data-title="Role: Jungle"></div>
+                    <div id="red_ch_mid" class="ch_icon_r" data-title="Role: Mid"></div>
+                    <div id="red_ch_bot" class="ch_icon_r" data-title="Role: Bot"></div>
+                    <div id="red_ch_sup" class="ch_icon_r" data-title="Role: Support"></div>
+                    
+                    <div id="blue_nex" class="nexus" data-title="Nexus"></div>
+                    <div id="red_nex" class="nexus" data-title="Nexus"></div>
+
+                    <div id="top_inhib_b" class="inhib" data-title="Inhibitor"></div>
+                    <div id="mid_inhib_b" class="inhib" data-title="Inhibitor"></div>
+                    <div id="bot_inhib_b" class="inhib" data-title="Inhibitor"></div>
+
+                    <div id="top_t1_turret_b" class="turret" data-title="Turret"></div>
+                    <div id="mid_t1_turret_b" class="turret" data-title="Turret"></div>
+                    <div id="bot_t1_turret_b" class="turret" data-title="Turret"></div>
+
+                    <div id="top_t2_turret_b" class="turret" data-title="Turret"></div>
+                    <div id="mid_t2_turret_b" class="turret" data-title="Turret"></div>
+                    <div id="bot_t2_turret_b" class="turret" data-title="Turret"></div>
+
+                    <div id="top_t3_turret_b" class="turret" data-title="Turret"></div>
+                    <div id="mid_t3_turret_b" class="turret" data-title="Turret"></div>
+                    <div id="bot_t3_turret_b" class="turret" data-title="Turret"></div>
+
+                    <div id="top_t4_turret_b" class="turret" data-title="Turret"></div>
+                    <div id="bot_t4_turret_b" class="turret" data-title="Turret"></div>
+
+                    <div id="top_inhib_r" class="inhib" data-title="Inhibitor"></div>
+                    <div id="mid_inhib_r" class="inhib" data-title="Inhibitor"></div>
+                    <div id="bot_inhib_r" class="inhib" data-title="Inhibitor"></div>
+
+                    <div id="top_t1_turret_r" class="turret" data-title="Turret"></div>
+                    <div id="mid_t1_turret_r" class="turret" data-title="Turret"></div>
+                    <div id="bot_t1_turret_r" class="turret" data-title="Turret"></div>
+
+                    <div id="top_t2_turret_r" class="turret" data-title="Turret"></div>
+                    <div id="mid_t2_turret_r" class="turret" data-title="Turret"></div>
+                    <div id="bot_t2_turret_r" class="turret" data-title="Turret"></div>
+
+                    <div id="top_t3_turret_r" class="turret" data-title="Turret"></div>
+                    <div id="mid_t3_turret_r" class="turret" data-title="Turret"></div>
+                    <div id="bot_t3_turret_r" class="turret" data-title="Turret"></div>
+
+                    <div id="top_t4_turret_r" class="turret" data-title="Turret"></div>
+                    <div id="bot_t4_turret_r" class="turret" data-title="Turret"></div>
+
+                    <div id="b_blue" class="jgIcon" data-title="Blue Sentinel"></div>
+                    <div id="b_red" class="jgIcon" data-title="Red Brambleback"></div>
+                    <div id="r_blue" class="jgIcon" data-title="Blue Sentinel"></div>
+                    <div id="r_red" class="jgIcon" data-title="Red Brambleback"></div>
+                    <div id="baron" class="jgIcon" data-title="Baron Nashor"></div>
+                    <div id="dragon" class="jgIcon" data-title="Dragon"></div>    
+                </div>
+                <canvas id="can"></canvas>
+            </div>
+            <div id="pb_tips1a" class="n_tips">
+                <h3>Choose your play for the blue team!</h3>
+                <button class="x_button">X</button>
+            </div>
+            <div id="pb_tips1b" class="n_tips">
+                <h3>Choose your play for the red team!</h3>
+                <button class="x_button">X</button>
+            </div>
+            <div id="pb_tips2" class="n_tips">
+                <h3>Return player all icons to their starting positions.</h3>
+                <button class="x_button">X</button>
+            </div>
+            <div id="adv_tips1" class="n_tips">
+                <h3>Choose a champion and drag it into a role box.</h3>
+                <button class="x_button">X</button>
+            </div>
+            <div id="adv_tips2" class="n_tips">
+                <h3>Champions you drag here will appear on the map.</h3>
+                <h3>Map icons can be moved!</h3>
+                <button class="x_button">X</button>
+            </div>
+            <div id="adv_tips3" class="n_tips">
+                <h3>Feel free to draw anything you want!</h3>
+                <button class="x_button">X</button>
+            </div>
+        </div>
+        
+        <div id="login_window">
+            <div id="player_type">
+                <button id="new"><h2 id="new">First time here!</h2></button>
+                <button id="exp"><h2 id="exp">I've been here before.</h2></button>
+            </div>
+            <button id="skip_login_x" class="x_button">X</button>
+        </div>
+        
+        <div id="stats_page">
+            <button class="x_button">X</button>
+            <h3> User Statistics</h3>
+            <table class="table table-condensed">
+                <tbody>
+                    <tr>
+                        <td>New Users:</td>
+                        <td id="n_user_num">0</td>
+                    </tr>
+                    <tr>
+                        <td>Experienced Users:</td>
+                        <td id="e_user_num">0</td>
+                    </tr>
+                    <th>Blue Team</th>
+                    <th>Play Count</th>
+                    <tr>
+                        <td>4-0-1:</td>
+                        <td id="b_play_count1">0</td>
+                    </tr>
+                    <tr>
+                        <td>1-0-4:</td>
+                        <td id="b_play_count2">0</td>
+                    </tr>
+                    <tr>
+                        <td>3-1-1:</td>
+                        <td id="b_play_count3">0</td>
+                    </tr>
+                    <tr>
+                        <td>1-3-1:</td>
+                        <td id="b_play_count4">0</td>
+                    </tr>
+                    <tr>
+                        <td>1-1-3:</td>
+                        <td id="b_play_count5">0</td>
+                    </tr>
+                    <th>Red Team</th>
+                    <th>Play Count</th>
+                    <tr>
+                        <td>4-0-1:</td>
+                        <td id="r_play_count1">0</td>
+                    </tr>
+                    <tr>
+                        <td>1-0-4:</td>
+                        <td id="r_play_count2">0</td>
+                    </tr>
+                    <tr>
+                        <td>3-1-1:</td>
+                        <td id="r_play_count3">0</td>
+                    </tr>
+                    <tr>
+                        <td>1-3-1:</td>
+                        <td id="r_play_count4">0</td>
+                    </tr>
+                    <tr>
+                        <td>1-1-3:</td>
+                        <td id="r_play_count5">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="cont" class="container-fluid">
+            <div class="row">
+                <div id="homepage" class="col-12">
+                    <div id="feature_list">
+                        <h3>Features</h3>
+                        <p> - 5 preset strategies</p>
+                        <p> - Discover important objectives on the map</p>
+                        <p> - Choose your own characters and assign them roles!</p>
+                        <p> - Draggable player and ward nodes</p>
+                        <p> - Draw on the map!</p>
+                        <p> - Create your own strategies with the LoL Playbook App</p>
+                    </div>
+                    <div id="screenshot"></div>
+                    <div id="lolLogo">
+                        <h1 id="site_title">Playbook</h1>
+                    </div>
+                    <img class="page_split" src="img/page_split_t.png" />
+                </div>
+                
+                <div id="Objectives" class="col-12">
+                    <h1 class="page_header" >Objectives</h1>
+                    <div id="obj_controls">
+                        <div id="jungle_tab" class="obj_tabs" >
+                            <div id="bar_img" class="tab_imgs"></div>
+                            <div id="drag_img" class="tab_imgs"></div>
+                            <div id="blue_buff" class="tab_imgs"></div>
+                            <div id="red_buff" class="tab_imgs"></div>
+                        </div>
+                        <div id="structure_tab" class="obj_tabs" >
+                            <div id="nex_img" class="tab_imgs" ></div>
+                            <div id="inhib_img" class="tab_imgs"></div>
+                            <div id="turret_img" class="tab_imgs"></div>
+                        </div>
+                        <button id="toStructures">Structures</button>
+                        <button id="toJungle">Jungle</button>
+                    </div>
+                    <div id="info" >
+                        <h3 id="info_header">What are objectives?</h3>
+                        
+                        <p id="obj_info1" class="obj_info">Objectives are exactly what they sound like; they are big and important. While not all objectives are required to win a match, they help you and your team progress throughout the game. </p>
+                        
+                        <p id="obj_info2" class="obj_info">Specifically, these objectives are split into 2 categories: Structures and Jungle (a.k.a. Neutral Objectives).</p>
+                        
+                        <p id="obj_info3" class="obj_info">Structures: Nexus, Inhibitors, and Turrets.</p>
+                        
+                        <p id="obj_info4" class="obj_info">Jungle: Baron Nashor, Dragon, and Blue and Red Buff.</p>
+                    </div>
+                    <div id="obj_img"></div>
+                    <img class="page_split" src="img/page_split_t.png" />
+                </div>
+                
+                <div id="Basic_Strategy" class="col-12">
+                    <div id="map_key">
+                        <p>*1 Blue or Red dot represents 1 player</p>
+                    </div>
+                    <div id="strat_img"></div>
+                    <div id="strat_controls">
+                        <button id="lphase" class="strat_b">Laning Phase</button>
+                        <button id="grouping" class="strat_b">Grouping</button>
+                        <button id="splitp" class="strat_b">Split Pushing</button>
+                        <button id="plist" class="strat_b">Priority List</button>
+                    </div>
+                    <h1 class="page_header" >Basic Strategy</h1>
+                    <img class="page_split" src="img/page_split_t.png" />
+                </div>
+                
+                <div id="vision_control" class="col-12">
+                    <h1 class="page_header" >Vision Control</h1>
+                    <iframe id="video" src="https://www.youtube.com/embed/fBRyTLoXpTQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div id="hcontrols">
+            <button id="menuButton">></button>
+            <button id="home_button">Home</button>
+            <button id="obj_button">Objectives</button>
+            <button id="strat_button">Basic Strategy</button>
+            <button id="vis_button">Vision Control</button>
+            <button id="pb_button">Playbook</button>
+            <button id="open_user_stats">User Stats</button>
+        </div>
+        
+        <script src="homejs.js"></script>
+        <script src="myjs.js"></script>
+        <script src="canvas.js"></script>
+        <script src="statistics.js"></script>
+        <script src="move_ch_position.js"></script>
+    </body>
+</html>

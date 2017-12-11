@@ -1,0 +1,390 @@
+#workspace {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: gray;
+    transition: 0.2s;
+    display: none;
+    overflow: hidden;
+}
+
+#map{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    margin:auto;
+    background-image: url(http://www.lol-wallpapers.com/wp-content/uploads/2017/01/Summoners-Rift-Overview-League-of-Legends-Artwork-Wallpaper-lol.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#onmap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right:0%;
+    left:0%;
+    margin:auto;
+}
+
+#can{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000;
+    height: 500;
+    z-index: -1;
+}
+
+#draw{
+    position: absolute;
+    bottom: 5%;
+    left: 2.5%;
+    width: 45%;
+}
+
+#clear{
+    position: absolute;
+    width: 45%;
+    bottom: 5%;
+    right: 2.5%;
+    display: none;
+}
+
+#bsc_controls {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: grey;
+    border-right-style: solid;
+    border-right-color: darkblue;
+}
+
+#pbtitle{
+    text-align: center;
+}
+
+.bsc_menu{
+    height:3.5%;
+    width:100%;
+    margin: 3%;
+    border-style: hidden;
+}
+
+#default_strat{
+    position: absolute;
+    right: 0%;
+    bottom: 5%;
+}
+
+#tipsdiv{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
+#adv_controls {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: grey;
+    border-left-style: solid;
+    border-left-color: darkblue;
+    overflow: hidden;
+}
+
+#ch_select{
+    position: relative;
+    top: 0%;
+    left: 0px;
+    height: 4%;    
+}
+
+#ch_input{
+    position: relative;
+    bottom: 30%;
+    width: 60%;
+    display: inline-block;
+}
+
+#go{
+    position: relative;
+    bottom: 30%;
+    width:15%;
+    display: inline-block;
+}
+
+#img_box{
+    width: 15%;
+    height:100%;
+    border: solid;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.ch_img{
+    width: 100%;
+    height: 100%;;
+    background-size: cover;
+    background-position: center center;
+}
+
+.team_button{
+    position: relative;
+    bottom: 40%;
+    display: inline-block;
+    
+}
+
+#blueroles{
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    left: 10%;
+    display: inline-block;
+}
+
+#redroles{
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    right: 10%;
+    display: inline-block;
+}
+
+.rolebox_b{
+    border-style: solid;
+    border-color: mediumblue;
+    width: 100%;
+    height: 14%;
+    display: inline-block;
+}
+
+.rolebox_r{
+    border-style: solid;
+    border-color: darkred;
+    width: 100%;
+    height: 14%;
+    display: inline-block;
+}
+
+#top{
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/e/ef/Top_icon.png/revision/latest?cb=20170515021434);
+    background-size: cover;
+    background-position: center;
+}
+
+#jungle{
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/8/81/Roamer_icon.png/revision/latest?cb=20171030151016);
+    background-size: cover;
+    background-position: center;
+}
+
+#mid{
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/Middle_icon.png/revision/latest?cb=20161112025312);
+    background-size: cover;
+    background-position: center;
+}
+
+#bot{
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/9/97/Bottom_icon.png/revision/latest/scale-to-width-down/120?cb=20161112025314);
+    background-size: cover;
+    background-position: center;
+}
+
+#support{
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/9/97/Bottom_icon.png/revision/latest/scale-to-width-down/120?cb=20161112025314);
+    background-size: cover;
+    background-position: center;
+}
+
+#ward_div{
+    position: absolute;
+    top:50%;
+    height: 5%;
+    width: 100%;
+}
+
+#s_ward{
+    height: 100%;
+    width:20%;
+    background-color: transparent;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d1/Stealth_Ward_%28Item%29_item.png/revision/latest?cb=20130319091502);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#c_ward{
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1b/Control_Ward_item.png/revision/latest?cb=20170506221602);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#login_window{
+    position: fixed;
+    width: 20vw;
+    height: 50vh;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background-image: url(https://oce.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/art/wp_alistar_vs_olaf_1920x1080.jpg?itok=x82BOhHc);
+    background-size: cover;
+    border-style: solid;
+    border-radius: 5%;
+    display: block;
+    color: white;
+    z-index: 4;
+}
+
+.x_button{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border-style: hidden;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#player_type{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0px;
+}
+
+#exp{
+    position: relative;
+    width: 80%;
+    height: 30%;
+    margin: 10%;
+    margin-top: 5%;
+    color: white;
+    background-color: transparent;
+}
+
+#new{
+    position: relative;
+    width: 80%;
+    height: 30%;
+    margin: 10%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: transparent;
+}
+
+#tutorial_tips{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.n_tips{
+    position: absolute;
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    z-index: 4;
+}
+
+#pb_tips1a{
+    width: 15%;
+    height: 10%;
+    left:18%;
+    top: 15%;
+}
+
+#pb_tips1b{
+    width: 15%;
+    height: 10%;
+    left:18%;
+    top: 45%;
+}
+
+#pb_tips2{
+    width: 15%;
+    height: 10%;
+    left:18%;
+    top: 87%;
+}
+
+#adv_tips1{
+    width:15%;
+    height: 10%;
+    top:0px;
+    left: 67%;
+}
+
+#adv_tips2{
+    width: 15%;
+    height: 15%;
+    top:25%;
+    left: 67%;
+}
+
+#adv_tips3{
+    width: 15%;
+    height: 10%;
+    top: 87%;
+    left: 67%;
+}
+
+#stats_table{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    border-top-style: solid;
+    border-bottom: solid;
+    bottom: 20%;
+    left: 0px;
+    background-color: azure;
+    overflow: auto;
+}
+
+#stat_title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#stats_page{
+    position: fixed;
+    width: 20vw;
+    height: 30vh;
+    top: 0px;
+    left:0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    border: solid;
+    z-index: 5;
+    display: none;
+    background-color: white;
+    overflow: auto;
+}

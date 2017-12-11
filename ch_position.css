@@ -1,0 +1,99 @@
+.ch_icon_b{
+    position: absolute !important;
+    width:3%;
+    height:3%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: mediumblue;
+    background-color: rgba(40, 80, 200, 0.5);
+}
+
+#blue_ch_top{
+    left: 18%;
+    top:24%;
+}
+
+#blue_ch_jg{
+    left: 25%;
+    top: 45%;
+}
+
+#blue_ch_mid{
+    left:45%;
+    top:52%;
+}
+
+#blue_ch_bot{
+    left: 73%;
+    top:84%;
+}
+
+#blue_ch_sup{
+    left: 70%;
+    top: 87%;
+}
+
+.ch_icon_r{
+    position: absolute !important;
+    width:3%;
+    height:3%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  darkred;
+    background-color: rgba(200, 80, 40, 0.5);
+}
+
+#red_ch_top{
+    top: 16%;
+    left: 25%;
+}
+
+#red_ch_jg{
+    left: 49%;
+    top:23%;
+}
+
+#red_ch_mid{
+    top:45%;
+    left:53%;
+}
+
+#red_ch_bot{
+    left: 80%;
+    top:75%;
+}
+
+#red_ch_sup{
+    left: 82%;
+    top:72%;
+}
+
+.s_ward_icon{
+    position: absolute !important;
+    width:2%;
+    height:2%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d1/Stealth_Ward_%28Item%29_item.png/revision/latest?cb=20130319091502);
+    border-radius: 50%;
+    left: 49%;
+    top: 49%;
+}
+
+.c_ward_icon{
+    position: absolute !important;
+    width:2%;
+    height:2%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1b/Control_Ward_item.png/revision/latest?cb=20170506221602);
+    border-radius: 50%;
+    left: 49%;
+    top: 49%;
+}
