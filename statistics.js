@@ -8,12 +8,6 @@ var num_ward1 = document.getElementById("s_ward_num"),
 
 var play_select = document.getElementById("bsc_controls");
 
-var v_new = document.getElementById("new"),
-    v_exp = document.getElementById("exp");
-
-var n_user_num = document.getElementById("n_user_num"),
-    e_user_num = document.getElementById("e_user_num");
-
 var p1_b = document.getElementById("b_play_count1"),
     p2_b = document.getElementById("b_play_count2"),
     p3_b = document.getElementById("b_play_count3"),
@@ -50,10 +44,6 @@ function local_load(){
                 "rPlay4": 0,
                 "rPlay5": 0,
                 "def_str": 0
-            },
-            {
-                "new_v": 0,
-                "exp_v": 0
             }];
         
         var arText = JSON.stringify(init_stats);
@@ -66,9 +56,6 @@ function local_load(){
         if (new_stats.length > 0){
             new_stats[0].s_ward_clicks = 0;
             new_stats[0].c_ward_clicks = 0;
-
-            n_user_num.innerHTML =  new_stats[2].new_v;
-            e_user_num.innerHTML =  new_stats[2].exp_v;
 
             p1_b.innerHTML = new_stats[1].bPlay1;
             p2_b.innerHTML = new_stats[1].bPlay2;
@@ -152,20 +139,6 @@ c_ward.addEventListener("click", function(){
 play_select.addEventListener("click", function(ev){
     addPlayDataToStats(ev.target.id);
     
-    local_save(new_stats);
-})
-
-v_new.addEventListener("click", function(){
-    new_stats[2].new_v += 1
-    
-    n_user_num.innerHTML = new_stats[2].new_v;
-    local_save(new_stats);
-})
-
-v_exp.addEventListener("click", function(){
-    new_stats[2].exp_v += 1
-    
-    e_user_num.innerHTML = new_stats[2].exp_v;
     local_save(new_stats);
 })
 
