@@ -24,6 +24,7 @@
     height: 100%;
     right:-100%;
     border-style: hidden;
+    background: linear-gradient(45deg, red, blue);
 }
 
 #home_button{
