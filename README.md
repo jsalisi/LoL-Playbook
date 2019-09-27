@@ -1,2 +1,2 @@
 # LoL-Playbook
-## by: Justin Salisi
+by: Justin Salisi
